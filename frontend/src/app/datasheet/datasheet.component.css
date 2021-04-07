@@ -48,12 +48,13 @@ padding: 0px;
 
 }
 
-body{
+.body{
 font-family: century gothic;
 background-image: linear-gradient(rgba(0,0,0,5),rgba(0,0,0,0.5)), url(https://levvvel.com/wp-content/uploads/best-fiber-optic-modem-router.jpg);
 height: 100%;
 background-size: cover;
 background-position: center;
+color: white;
 }
 .main{
 
@@ -63,4 +64,35 @@ margin: 2%;
 .container-fluid{
     color: white;
 }
-    
+section{
+  font-size: 20px;
+  margin: 1%; 
+  text-align: justify;
+  text-justify: inter-word;
+}
+p{
+  margin-top: 1%;
+  font-size: 17px;
+}
+.card{
+  background-color: transparent;
+  text-align: justify;
+  text-justify: inter-word;
+  color: white;
+}
+.card-header{
+  background: linear-gradient(to bottom, #000000 0%, #003366 100%);
+  margin: 1%;
+  
+ 
+}
+.card-body{
+  margin: 1%;
+}
+.btn{
+  color:white;
+  font-size: 20px;
+}
+.btn:hover{
+  color: #b4dafc;
+}

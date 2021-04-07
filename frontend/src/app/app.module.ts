@@ -18,6 +18,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { DatasheetComponent } from './datasheet/datasheet.component';
 import { DesignComponent } from './design/design.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { DesignComponent } from './design/design.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
